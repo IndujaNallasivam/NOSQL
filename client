@@ -1,0 +1,70 @@
+127.0.0.1:6379> SADD USER_DETAILS : NAME sudharson induja aruthra dhiviya
+(integer) 6
+127.0.0.1:6379> SADD USER_DETAILS : USERNAME sdh14 indu23 aru15 dh67
+(integer) 5
+127.0.0.1:6379> SADD USER_DETAILS : AGE 19 21 20 20
+(integer) 4
+127.0.0.1:6379> SADD USER_DETAILS :SEX male female female female
+(integer) 3
+127.0.0.1:6379> SADD USER_DETAILS :PREFERRABLE_LANGUAGE  english korean french english
+(integer) 4
+127.0.0.1:6379> SADD USER_DETAILS :NATIONALITY india skorea france us
+(integer) 5
+127.0.0.1:6379> SADD USER_DETAILS :SUBSCRIPTION 1y 6m 2m 1m
+(integer) 5
+127.0.0.1:6379> SADD APP_DETAILS : PACKS 1y 2y 1m 2m 6m
+(integer) 7
+127.0.0.1:6379> SADD APP_DETAILS :GENRES thriller romance comedy crime
+(integer) 5
+127.0.0.1:6379> SADD APP_DETAILS :TYPE movie drama webseries
+(integer) 4
+127.0.0.1:6379> SMEMBERS USER_DETAILS
+ 1) "21"
+ 2) "skorea"
+ 3) "PREFERRABLE_LANGUAGE"
+ 4) "aru15"
+ 5) "1m"
+ 6) "aruthra"
+ 7) "male"
+ 8) "AGE"
+ 9) "NAME"
+10) "france"
+11) "20"
+12) "6m"
+13) "SEX"
+14) "english"
+15) "USERNAME"
+16) "female"
+17) "sdh14"
+18) "korean"
+19) "induja"
+20) "sudharson"
+21) "french"
+22) "1y"
+23) "dhiviya"
+24) "2m"
+25) "SUBSCRIPTION"
+26) "NATIONALITY"
+27) "indu23"
+28) "us"
+29) "dh67"
+30) "india"
+31) ":"
+32) "19"
+127.0.0.1:6379> SMEMBERS APP_DETAILS
+ 1) "comedy"
+ 2) "1m"
+ 3) "2y"
+ 4) "PACKS"
+ 5) "1y"
+ 6) "romance"
+ 7) "drama"
+ 8) "2m"
+ 9) "webseries"
+10) "GENRES"
+11) "thriller"
+12) "TYPE"
+13) "crime"
+14) "6m"
+15) ":"
+16) "movie"
